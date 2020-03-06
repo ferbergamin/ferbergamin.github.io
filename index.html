@@ -38,7 +38,7 @@
               <div class="col-xl-3"></div>
               <div class="col-xl-6">
                 <h3 class="text-monospace">Sobre mim</h3>
-                <p class="text-monospace">
+                <p class="text-monospace" style="text-align: justify;">
                   Meu nome é Luiz Fernando Bergamin, tenho 24 anos e atualmente sou estágiário em Desenvolvimento de Software pela Leavening, uma aceleradora de StartUp, localizada em Pompéia. Estou graduando em Big Data pela Faculdade de Tecnologia de Pompéia, e estou no meu último ano de formação.
                   <br/><br/>
 
@@ -47,19 +47,44 @@
                   Em meu tempo livre gosto de ouvir músicas, tocar instrumentos musicais e jogar com os amigos.
                 </p>
               </div>
+              <div  style="bottom: 0; position: fixed; right: 0; width: 45%;">
+                <a href="#" onclick="changeAria('v-pills-messages-tab')">
+                  <img width="35px" src="./assets/imgs/arrow-down.svg"></img>
+                </a>
+              </div>
             </div>
           </div>
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-              <h3 class="text-monospace">Formações</h3>
-              <p class="text-monospace">
-                <b>Big Data no Agronegócio</b>
-                <br/>
-                Faculdade de Tecnologia "Shunji Nishimura", Pompéia
-                <br/>
-                Período de formação: Jan/2018 - Dez/2020
-              </p>
+            <div  style="top: 0; position: fixed; right: 0; width: 45%;">
+              <a href="#" onclick="changeAria('v-pills-profile-tab')">
+                <img style="transform: rotate(180deg);" width="35px" src="./assets/imgs/arrow-down.svg"></img>
+              </a>
+            </div>
+            <div  style="bottom: 0; position: fixed; right: 0; width: 45%;">
+              <a href="#" onclick="changeAria('v-pills-settings-tab')">
+                <img width="35px" src="./assets/imgs/arrow-down.svg"></img>
+              </a>
+            </div>
+            <h3 class="text-monospace">Formações</h3>
+            <p class="text-monospace">
+              <b>Big Data no Agronegócio</b>
+              <br/>
+              Faculdade de Tecnologia "Shunji Nishimura", Pompéia
+              <br/>
+              Período de formação: Jan/2018 - Dez/2020
+            </p>
           </div>
           <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <div  style="top: 0; position: fixed; right: 0; width: 45%;">
+              <a href="#" onclick="changeAria('v-pills-messages-tab')">
+                <img style="transform: rotate(180deg);" width="35px" src="./assets/imgs/arrow-down.svg"></img>
+              </a>
+            </div>
+            <div  style="bottom: 0; position: fixed; right: 0; width: 45%;">
+              <a href="#" onclick="changeAria('v-pills-exp-tab')">
+                <img width="35px" src="./assets/imgs/arrow-down.svg"></img>
+              </a>
+            </div>
             <img src="./assets/imgs/express.png" alt="express" class="img rounded-circle">
             <img width="126px" src="./assets/imgs/gitlab.png" alt="gitlab" class="img rounded-circle">
             <img width="126px" src="./assets/imgs/html.png" alt="html" class="img rounded-circle">
@@ -71,6 +96,11 @@
           </div>  
           <!-- <img src="./assets/imgs/" alt="" class="img rounded-circle"> -->
           <div class="tab-pane fade" id="v-pills-exp" role="tabpanel" aria-labelledby="v-pills-exp-tab">
+            <div  style="top: 0; position: fixed; right: 0; width: 45%;">
+              <a href="#" onclick="changeAria('v-pills-settings-tab')">
+                <img style="transform: rotate(180deg);" width="35px" src="./assets/imgs/arrow-down.svg"></img>
+              </a>
+            </div>
             <h3 class="text-monospace">Experiências Profissionais</h3>
             <p class="text-monospace">
               <b>Leavening</b>
@@ -95,12 +125,15 @@
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
+  <script>
+    function changeAria(newId){
+      document.querySelector("#"+newId).click();
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
