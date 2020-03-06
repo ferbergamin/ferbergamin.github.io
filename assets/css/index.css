@@ -1,0 +1,10 @@
+.nav-col{
+  background-color: rgb(201, 103, 103);
+  text-align: center;
+  height: 100vh;
+  /*border-top-right-radius: /*20*/%;*/
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: black;
+}
